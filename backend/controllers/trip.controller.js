@@ -45,4 +45,23 @@ async function getTripDetailsByIdController(req,res){
         res.send('SOMETHING WENT WRONG')
     }
 }
-module.exports = { tripAdditionController, getTripDetailsController, getTripDetailsByIdController }
+
+async function updateTripController(req, res) {
+    try {
+        const updatedTrip = await tripModel.Trip.findByIdAndUpdate(
+            req.params.id, // ID from URL
+            req.body,     // Updated data from request
+            { new: true }  // Return the updated document
+        );
+        
+        if (!updatedTrip) {
+            return res.status(404).send('Trip not found');
+        }
+        res.send(updatedTrip);
+    } catch (error) {
+        console.log('UPDATE ERROR:', error);
+        res.status(500).send('Failed to update trip');
+    }
+}
+
+module.exports = { tripAdditionController, getTripDetailsController, getTripDetailsByIdController,updateTripController }

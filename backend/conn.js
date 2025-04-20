@@ -1,10 +1,26 @@
-const mongoose = require('mongoose')
-const URL = process.env.MONGO_URI
+const mongoose = require('mongoose');
+const URL = process.env.MONGODB_URL;  // Using MONGODB_URL as defined in your .env file
 
-mongoose.connect(URL)
-mongoose.Promise = global.Promise
+mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected successfully'))
+  .catch((err) => console.log('MongoDB connection error:', err));
 
-const db = mongoose.connection
-db.on('error', console.error.bind(console, 'DB ERROR: '))
+mongoose.Promise = global.Promise;
 
-module.exports = {db, mongoose}
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'DB ERROR: '));
+
+module.exports = { db, mongoose };
+
+
+// const mongoose = require('mongoose');
+// const URL = process.env.MONGODB_URI;
+
+// mongoose.connect(URL)
+// mongoose.Promise = global.Promise;
+
+// const db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'DB ERROR: '));
+
+// module.exports = {db, mongoose};
+

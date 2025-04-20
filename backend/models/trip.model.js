@@ -1,6 +1,7 @@
 const db = require("../conn");
 const mongoose = require("../conn").mongoose;
 
+
 const tripSchema = mongoose.Schema({
   tripName: {
     type: String,
