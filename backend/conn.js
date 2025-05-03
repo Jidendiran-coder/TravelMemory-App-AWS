@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const URL = process.env.MONGODB_URL;  // Using MONGODB_URL as defined in your .env file
+const URL = process.env.MONGODB_URI;  // Using MONGODB_URL as defined in your .env file
 
 mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected successfully'))
