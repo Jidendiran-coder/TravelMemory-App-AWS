@@ -87,6 +87,7 @@ sudo service nginx restart
 ![image](https://github.com/user-attachments/assets/724f8b4a-8f05-40ca-a380-00e12baed91b)
 
 Now, backend is accessible at **port 80** via public IP.
+
 ![image](https://github.com/user-attachments/assets/c6c5bd98-3cef-4f6f-bb68-c2c3cbb85477)
 
 ---
