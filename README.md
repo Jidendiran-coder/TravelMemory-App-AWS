@@ -30,6 +30,7 @@ Access the complete codebase of the Travel Memory application here:
 #### 🚀 Launch Backend EC2 (Instance: `Jidendiran_TM_Backend`)
 - **AMI**: Ubuntu  
 - **Type**: t2.micro
+- 
 ![image](https://github.com/user-attachments/assets/87d151f6-e23c-4285-baa5-d996dfa37f27)
 
 ```bash
