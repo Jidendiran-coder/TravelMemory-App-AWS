@@ -3,7 +3,7 @@
 ## 📁 Project Repository
 
 Access the complete codebase of the Travel Memory application here:  
-🔗 [https://github.com/UnpredictablePrashant/TravelMemory](https://github.com/UnpredictablePrashant/TravelMemory)
+🔗 [https://github.com/Jidendiran-coder/TravelMemory-App-AWS.git]((https://github.com/Jidendiran-coder/TravelMemory-App-AWS.git))
 
 ---
 
