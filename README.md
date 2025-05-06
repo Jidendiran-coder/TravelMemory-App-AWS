@@ -99,6 +99,7 @@ Now, backend is accessible at **port 80** via public IP.
 
 * **AMI**: Ubuntu
 * **Type**: t2.micro
+
 ![image](https://github.com/user-attachments/assets/4df489bf-09a6-4c79-bff6-1f233f1cfa06)
 
 ```bash
@@ -117,6 +118,7 @@ nano url.js
 export const baseUrl = process.env.REACT_APP_BACKEND_URL || "http://<backend_ip>:3000";
 ```
 ![image](https://github.com/user-attachments/assets/2dbf898d-dbf4-48c2-a0a8-82f32514f67a)
+
 ![image](https://github.com/user-attachments/assets/a6840c12-d5c0-4b60-a86a-60a1a7a07d6d)
 
 #### 🔁 NGINX Configuration for Frontend
@@ -154,10 +156,13 @@ npm install
 npm start
 ```
 ![image](https://github.com/user-attachments/assets/4d56f215-90aa-4ac5-a24e-bed169acbd2c)
+
 Now change the backend url from 3000 to 80
+
 ![image](https://github.com/user-attachments/assets/8653f5fc-78d1-455d-958f-428bede3a885)
 
 Now, the frontend is available on **port 80**.
+
 ![image](https://github.com/user-attachments/assets/97b25b1f-b8af-4c24-90f8-2526e7ee6b17)
 
 ---
@@ -240,12 +245,17 @@ Ensure:
 * Associate appropriate target groups with the load balancers.
 
 ![image](https://github.com/user-attachments/assets/29009401-9b7c-41f9-98d3-df0916062fb2)
+
 ![image](https://github.com/user-attachments/assets/238481ea-bdc7-483b-9fb2-cd82e908a58e)
+
 ![image](https://github.com/user-attachments/assets/475ce3bb-c1a7-4d2b-90d2-0c9fa6f7f218)
+
 ![image](https://github.com/user-attachments/assets/58b15bf9-38e7-4ef6-9952-298c20481f23)
 
 Now Both the Load Balancers are working good
+
 ![image](https://github.com/user-attachments/assets/12c0804e-6766-43b4-baf3-b2cc03958710)
+
 ![image](https://github.com/user-attachments/assets/37665d7a-43e9-49e5-b280-539a3dd4843a)
 
 ---
@@ -260,8 +270,11 @@ Now Both the Load Balancers are working good
 * Add **CNAME** record in Cloudflare pointing to frontend Load Balancer.
 * Add **CNAME or A record** for backend (subdomain → backend ELB or IP).
 * Update `url.js` in frontend:
+* 
 ![image](https://github.com/user-attachments/assets/583727ae-de30-42eb-a40a-edad10a093dd)
+
 ![image](https://github.com/user-attachments/assets/60cd9a42-5b10-48e8-b8fd-2081c8061ad8)
+
 ![image](https://github.com/user-attachments/assets/e480d1ea-234d-4258-ac8c-fbfa4f2907ff)
 
 ```js
@@ -272,6 +285,7 @@ Now you can access the application via domain names:
 
 * Frontend: (http://travelmemory.jidendir.in)
 * Backend: (http://back.jidendir.in)
+
 ![image](https://github.com/user-attachments/assets/7bafc528-7b1b-4487-b335-1f9765e7a00f)
 
 
