@@ -227,7 +227,9 @@ Create:
 
 * Application Load Balancer for Frontend
 * Application Load Balancer for Backend
+
 ![image](https://github.com/user-attachments/assets/e736c915-5ba2-4347-a8bf-389782631634)
+
 ![image](https://github.com/user-attachments/assets/9c79d1c7-6f92-43be-99cb-28931ed6f885)
 
 Ensure:
